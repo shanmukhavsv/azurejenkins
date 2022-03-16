@@ -1,7 +1,7 @@
 variable "cluster_name" {
   description = "Variable to provide your desired name for the cluster. The script will create a random name if this is empty"
   type        = string
-  default     = ""
+  default     = "jenkinsxtest"
 }
 variable "location" {
   type        = string
@@ -123,12 +123,12 @@ variable "subdomain" {
 variable "apex_resource_group_name" {
   type        = string
   description = "The resource group in which the Azure DNS apex domain resides. Required if apex_domain_integration_enabled is true"
-  default     = ""
+  default     = "srebackup"
 }
 variable "dns_resource_group_name" {
   type        = string
   description = "Resource group in which to create the Azure DNS zone. The script will create a random name if this is empty"
-  default     = ""
+  default     = "srebackup"
 }
 
 // ----------------------------------------------------------------------------
@@ -143,7 +143,7 @@ variable "key_vault_enabled" {
 variable "key_vault_resource_group_name" {
   type        = string
   description = "Resource group to create in which to place key vault"
-  default     = ""
+  default     = "srebackup"
 }
 variable "key_vault_name" {
   type        = string
@@ -162,7 +162,7 @@ variable "key_vault_sku" {
 // ---------------------------------------------------------------------------
 variable "registry_resource_group_name" {
   type        = string
-  default     = ""
+  default     = "srebackup"
   description = "The name of the resource group in to which to provision ACR managed registry. The script will create a random name if this is empty"
 }
 
@@ -186,5 +186,5 @@ variable "use_existing_acr_resource_group_name" {
 variable "storage_resource_group_name" {
   type        = string
   description = "Resource group to create in which to place storage accounts"
-  default     = ""
+  default     = "srebackup"
 }
