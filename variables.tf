@@ -52,17 +52,17 @@ variable "cluster_version" {
 }
 variable "network_resource_group_name" {
   type        = string
-  default     = ""
+  default     = "srebackup"
   description = "The name of the resource group in to which to provision network resources. The script will create a random name if this is empty"
 }
 variable "cluster_resource_group_name" {
   type        = string
-  default     = ""
+  default     = "srebackup"
   description = "The name of the resource group in to which to provision AKS managed cluster. The script will create a random name if this is empty"
 }
 variable "cluster_node_resource_group_name" {
   type        = string
-  default     = ""
+  default     = "srebackup"
   description = "Resource group name in which to provision AKS cluster nodes. The script will create a random name if this is empty"
 }
 variable "vnet_cidr" {
