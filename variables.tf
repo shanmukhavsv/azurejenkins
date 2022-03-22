@@ -52,17 +52,17 @@ variable "cluster_version" {
 }
 variable "network_resource_group_name" {
   type        = string
-  default     = "srebackup"
+  default     = "srejenkinsx"
   description = "The name of the resource group in to which to provision network resources. The script will create a random name if this is empty"
 }
 variable "cluster_resource_group_name" {
   type        = string
-  default     = "srebackup"
+  default     = "srejenkinsx"
   description = "The name of the resource group in to which to provision AKS managed cluster. The script will create a random name if this is empty"
 }
 variable "cluster_node_resource_group_name" {
   type        = string
-  default     = "srebackup"
+  default     = "srejenkinsx"
   description = "Resource group name in which to provision AKS cluster nodes. The script will create a random name if this is empty"
 }
 variable "vnet_cidr" {
@@ -123,12 +123,12 @@ variable "subdomain" {
 variable "apex_resource_group_name" {
   type        = string
   description = "The resource group in which the Azure DNS apex domain resides. Required if apex_domain_integration_enabled is true"
-  default     = "srebackup"
+  default     = "srejenkinsx"
 }
 variable "dns_resource_group_name" {
   type        = string
   description = "Resource group in which to create the Azure DNS zone. The script will create a random name if this is empty"
-  default     = "srebackup"
+  default     = "srejenkinsx"
 }
 
 // ----------------------------------------------------------------------------
@@ -143,7 +143,7 @@ variable "key_vault_enabled" {
 variable "key_vault_resource_group_name" {
   type        = string
   description = "Resource group to create in which to place key vault"
-  default     = "srebackup"
+  default     = "srejenkinsx"
 }
 variable "key_vault_name" {
   type        = string
@@ -186,5 +186,5 @@ variable "use_existing_acr_resource_group_name" {
 variable "storage_resource_group_name" {
   type        = string
   description = "Resource group to create in which to place storage accounts"
-  default     = "srebackup"
+  default     = "srejenkinsx"
 }
